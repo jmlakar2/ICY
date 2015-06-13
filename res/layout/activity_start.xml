@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:background="#4875B4"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/activity_start_linearLayout2" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight=".9"
+	    android:orientation="horizontal" >
+	    
+        <android.support.v4.view.ViewPager
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/view_pager"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+	
+<!-- 	    <fragment -->
+<!-- 	        android:name="com.example.icy.StartActivityStartFragment" -->
+<!-- 	        android:id="@+id/activity_start_fragment_start" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	    	android:layout_height="match_parent" /> -->
+	    
+<!-- 	    <fragment -->
+<!-- 	        android:name="com.example.icy.StartActivityFormFragment" -->
+<!-- 	        android:id="@+id/activity_start_fragment_form" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	    	android:layout_height="match_parent" -->
+<!-- 	    	android:visibility="gone" /> -->
+	    
+<!-- 	    <fragment -->
+<!-- 	        android:name="com.example.icy.StartActivityUserFragment" -->
+<!-- 	        android:id="@+id/activity_start_fragment_user" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	    	android:layout_height="match_parent" -->
+<!-- 	    	android:visibility="gone" /> -->
+	    
+<!-- 	    <fragment -->
+<!-- 	        android:name="com.example.icy.StartActivityMapsFragment" -->
+<!-- 	        android:id="@+id/activity_start_fragment_maps" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	    	android:layout_height="match_parent" -->
+<!-- 	    	android:visibility="gone" /> -->
+	    
+<!-- 	    <fragment -->
+<!-- 	        android:name="com.example.icy.StartActivityDynamicCompanyFragment" -->
+<!-- 	        android:id="@+id/activity_start_fragment_company" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	    	android:layout_height="match_parent" -->
+<!-- 	    	android:visibility="gone" /> -->
+	    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/activity_start_linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/activity_start_linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight=".1"
+        android:background="#7290BA"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:weightSum="1"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".6"
+                android:onClick="onClickForm"
+                android:src="@drawable/document_add" />
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:weightSum="1" >
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".6"
+                android:onClick="onClickUser"
+                android:src="@drawable/business_man" />
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:weightSum="1" >
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight=".6"
+                android:onClick="onClickMaps"
+                android:src="@drawable/gps_settings" />
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:weightSum="1"
+            android:layout_height="match_parent" >
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:onClick="onClickCompany"
+                android:src="@drawable/house" />
+            
+            <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight=".2" >
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

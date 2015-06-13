@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4875B4"
+    android:gravity="start"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="hr.foi.air.icydemo.MainActivity" xmlns:app="http://schemas.android.com/apk/res/com.example.icy">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:onClick="onClickLogout"
+            android:text="Odjava"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo_icy_cut" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sustav za osobnu evidenciju zaposlenika"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+    
+<!--     <LinearLayout -->
+<!--         android:id="@+id/linearLayout3" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_below="@+id/linearLayout2" -->
+<!--         android:baselineAligned="true" -->
+<!--         android:orientation="vertical" > -->
+        
+<!--         <LinearLayout -->
+<!-- 	        android:id="@+id/linearLayout4" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	        android:layout_height="0dp" -->
+<!-- 	        android:layout_weight=".75" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_below="@+id/linearLayout3" -->
+<!-- 	        android:layout_centerHorizontal="true" -->
+<!-- 	        android:layout_marginTop="20dp" -->
+<!-- 	        android:orientation="vertical" > -->
+	        
+<!--         </LinearLayout> -->
+
+<!-- 	    <LinearLayout -->
+<!-- 	        android:id="@+id/linearLayout5" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	        android:layout_height="0dp" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+<!-- 	        android:layout_below="@+id/linearLayout4" -->
+<!-- 	        android:layout_centerHorizontal="true" -->
+<!-- 	        android:layout_marginTop="20dp" -->
+<!-- 	        android:layout_weight=".25" -->
+<!-- 	        android:background="#7290BA" -->
+<!-- 	        android:baselineAligned="true" -->
+<!-- 	        android:orientation="horizontal" > -->
+	
+<!-- 	        <LinearLayout -->
+<!-- 	            android:layout_width="0dp" -->
+<!-- 	            android:layout_height="match_parent" -->
+<!-- 	            android:layout_weight=".25" -->
+<!-- 	            android:weightSum="1" -->
+<!-- 	            android:orientation="horizontal" > -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	            <ImageView -->
+<!-- 	                android:id="@+id/imageView2" -->
+<!-- 	                android:layout_width="0dp" -->
+<!-- 	                android:layout_height="match_parent" -->
+<!-- 	                android:layout_centerHorizontal="true" -->
+<!-- 	                android:layout_gravity="center_horizontal" -->
+<!-- 	                android:layout_weight=".6" -->
+<!-- 	                android:onClick="onClickForm" -->
+<!-- 	                android:src="@drawable/document_add" /> -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	        </LinearLayout> -->
+	
+<!-- 	        <LinearLayout -->
+<!-- 	            android:layout_width="0dp" -->
+<!-- 	            android:layout_height="match_parent" -->
+<!-- 	            android:layout_weight=".25" -->
+<!-- 	            android:weightSum="1" > -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	            <ImageView -->
+<!-- 	                android:id="@+id/imageView3" -->
+<!-- 	                android:layout_width="0dp" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:layout_centerHorizontal="true" -->
+<!-- 	                android:layout_gravity="center_horizontal" -->
+<!-- 	                android:layout_weight=".6" -->
+<!-- 	                android:onClick="onClickUser" -->
+<!-- 	                android:src="@drawable/business_man" /> -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	        </LinearLayout> -->
+	
+<!-- 	        <LinearLayout -->
+<!-- 	            android:layout_width="0dp" -->
+<!-- 	            android:layout_height="match_parent" -->
+<!-- 	            android:layout_weight=".25" -->
+<!-- 	            android:weightSum="1" > -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	            <ImageView -->
+<!-- 	                android:id="@+id/imageView4" -->
+<!-- 	                android:layout_width="0dp" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:layout_centerHorizontal="true" -->
+<!-- 	                android:layout_weight=".6" -->
+<!-- 	                android:onClick="onClickMaps" -->
+<!-- 	                android:src="@drawable/gps_settings" /> -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	        </LinearLayout> -->
+	
+<!-- 	        <LinearLayout -->
+<!-- 	            android:layout_width="0dp" -->
+<!-- 	            android:layout_weight=".25" -->
+<!-- 	            android:weightSum="1" -->
+<!-- 	            android:layout_height="match_parent" > -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	            <ImageView -->
+<!-- 	                android:id="@+id/imageView5" -->
+<!-- 	                android:layout_width="0dp" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:layout_weight=".6" -->
+<!-- 	                android:onClick="onClickCompany" -->
+<!-- 	                android:src="@drawable/house" /> -->
+	            
+<!-- 	            <LinearLayout -->
+<!-- 		            android:layout_width="0dp" -->
+<!-- 		            android:layout_height="match_parent" -->
+<!-- 		            android:layout_weight=".2" > -->
+<!-- 	            </LinearLayout> -->
+	
+<!-- 	        </LinearLayout> -->
+	
+<!-- 	    </LinearLayout> -->
+	    
+<!-- 	 </LinearLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.util.Log;
+
+import com.example.icy.interfaces.ILogin;
+import com.example.icy.types.AutentReturnType;
+
+
+public class TestLogin implements ILogin{
+
+	@Override
+	public AutentReturnType autent(String arg0, String arg1) {
+		AutentReturnType rezultat = new AutentReturnType();
+		String kod = "randomKod";
+		int status = 1;
+		String user = "test1";
+		
+		rezultat.setKod(kod);
+		rezultat.setStatus(status);
+		rezultat.setUser(user);
+		
+		return rezultat;
+	}
+
+	@Override
+	public void logout(Context arg0) {
+		SharedPreferences korPod = arg0.getSharedPreferences ("testPod", 0);
+		SharedPreferences.Editor editor = korPod.edit();
+		editor.putString("user", null);
+		editor.commit();
+		editor.putString("kod", null);
+		editor.commit();
+		editor.putInt("status", 0);
+		editor.commit();
+		
+	}
+
+	@Override
+	public void spremiKod(String arg0, String arg1, Context arg2) {
+		SharedPreferences korPod = arg2.getSharedPreferences ("testPod", 0);
+		SharedPreferences.Editor editor = korPod.edit();
+		editor.putString("user", arg0);
+		editor.commit();
+		editor.putString("kod", arg1);
+		editor.commit();
+	}
+
+	@Override
+	public String vratiKod(Context arg0) {
+		SharedPreferences myPref = arg0.getSharedPreferences("testPod", 0);
+		String kod = myPref.getString("kod", null);
+		return kod;
+	}
+
+	@Override
+	public String vratiUser(Context arg0) {
+		SharedPreferences myPref = arg0.getSharedPreferences("korPod", 0);
+		String user = myPref.getString("user", null);
+		return user;
+	}
+
+}

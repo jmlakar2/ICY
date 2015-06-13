@@ -1,0 +1,457 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4875B4"
+    android:gravity="start"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="hr.foi.air.icydemo.MainActivity" 
+    xmlns:app="http://schemas.android.com/apk/res/com.example.icy" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+           
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Satnica*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <EditText
+                       android:id="@+id/editSatnica"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1" 
+                       android:maxLines="1">
+
+                       <requestFocus />
+                   </EditText>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Radno vrijeme*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <EditText
+                       android:id="@+id/editRadno"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1" 
+                       android:maxLines="1">
+
+                   </EditText>
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Pauza*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <EditText
+                       android:id="@+id/editPauza"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1" 
+                       android:maxLines="1">
+
+                   </EditText>
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Prirez (%)*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <EditText
+                       android:id="@+id/editPrirez"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1" 
+                       android:maxLines="1">
+
+                   </EditText>
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Broj uzdržavnih članova* (ne djeca i umirovljenici)" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerUzdrzavani"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp"
+                       android:entries="@array/household_dependency_num" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView6"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Broj djece*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerDjeca"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp" 
+                       android:entries="@array/children_num" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView7"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Razina invaliditeta*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerInvalid"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp"
+                       android:entries="@array/disability_level" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView8"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Područje PPDS*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerPPDS"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp"
+                       android:entries="@array/ppds_area" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView9"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Brdsko-planinska područja" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerBrdo"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp"
+                       android:entries="@array/mountain_area" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+
+                   <TextView
+                       android:id="@+id/textView10"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="Uzdržavani umirovljenik*" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+
+                   <Spinner
+                       android:id="@+id/spinnerUmirov"
+                       android:layout_width="match_parent"
+                       android:layout_height="47dp"
+                       android:entries="@array/dependant_retirees" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".3" >
+                   
+                   <TextView
+                       android:id="@+id/textView11"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@android:color/white"
+                       android:text="* Obavezna polja" />
+                   
+               </LinearLayout>
+               
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+                   
+                   <Button
+                        android:id="@+id/update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ažuriraj podatke"
+                        android:onClick="onClickSubmit"
+                        android:textColor="@android:color/white" />
+                   
+               </LinearLayout>
+               
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".7"
+                   android:paddingLeft="20dp" >
+                   
+                   <Button
+                        android:id="@+id/workLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ovdje radim!"
+                        android:onClick="onClickLocation"
+                        android:textColor="@android:color/white" />
+                   
+               </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

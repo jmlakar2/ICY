@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">ICY</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo">Logo</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_company">CompanyActivity</string>
+    <string name="title_dynamic_activity_company">DynamicCompanyActivity</string>
+
+    <string-array name="household_dependency_num">
+        <item>nema</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="mjeseci">
+        <item>nema</item>
+        <item>Siječanj</item>
+        <item>Veljača</item>
+        <item>Ožujak</item>
+        <item>Travanj</item>
+        <item>Svibanj</item>
+        <item>Lipanj</item>
+        <item>Srpanj</item>
+        <item>Kolovoz</item>
+        <item>Rujan</item>
+        <item>Listopad</item>
+        <item>Studeni</item>
+        <item>Prosinac</item>
+    </string-array>
+    <string-array name="children_num">
+        <item>nema</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="disability_level">
+        <item>Ne</item>
+        <item>Da</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="ppds_area">
+        <item>Ne</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="mountain_area">
+        <item>Ne</item>
+        <item>Da</item>
+    </string-array>
+    <string-array name="dependant_retirees">
+        <item>Ne</item>
+        <item>Da</item>
+    </string-array>
+
+    <string name="title_activity_test">TestActivity</string>
+    
+    <string name="autent_srvc">http://178.62.195.200/icy/servis/autent.php</string>
+    <string name="zapos_srvc">http://178.62.195.200/icy/servis/zaposlenici.php</string>
+    
+    <string name="no_GPS">GPS je isključen!</string>
+    <string name="wrong_auth">Krivi podaci!</string>
+    <string name="odjava">Korisnik je odjavljen!</string>
+    <string name="pogreska">Podaci nisu ispravno uneseni!</string>
+    <string name="baza_uspjeh">Podaci su uspješno uneseni!</string>
+    <string name="azuriranje_uspjeh">Podaci su uspješno ažurirani!</string>
+    <string name="lokacija_uspjeh">Podaci su uspješno ažurirani!</string>
+    <string name="lokacija_neuspjeh">Podaci su uspješno ažurirani!</string>
+    <string name="vrijemePosao">Na poslu ste od: </string>
+    <string name="nemaPosao">Trenutno niste na poslu </string>
+    <string name="nemaLokacija">Nisu uneseni svi potrebni korisnički podaci! </string>
+
+</resources>
